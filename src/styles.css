@@ -1,0 +1,33 @@
+/* ヘッダ・背景・フォントなど普遍要素のスタイルのみ */
+/* 各ページのスタイルはそれぞれのモジュールに紐づけ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    position: sticky;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border-style: none;
+    background-color: antiquewhite;
+    border-radius: 10px 10px 0 0;
+    margin: 10px 10px 0 0;
+}
+
+button:hover {
+    background-color: aqua;
+}
