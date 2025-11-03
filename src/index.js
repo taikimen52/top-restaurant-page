@@ -1,6 +1,7 @@
 import "./styles.css";
 import homeRendering from "./home.js" ;
 import menuRendering from "./menupage.js";
+import contactRendering from "./conatct.js";
 
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
@@ -27,4 +28,5 @@ menuBtn.addEventListener("click", ()=>{
 
 contactBtn.addEventListener("click", ()=>{
     resetContent();
+    contactRendering();
 })
