@@ -4,7 +4,6 @@ console.log(Shopinfo);
 export default homeRendering;
 
 // Homeタブのコンテンツ生成、店舗情報はshopinfo.jsから取得する
-
 const content = document.querySelector("#content");
 
 function homeRendering() {
