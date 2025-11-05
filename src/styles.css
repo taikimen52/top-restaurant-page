@@ -32,3 +32,14 @@ button {
 button:hover {
     background-color: aqua;
 }
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Homeタブ */
+
+.info {
+    text-align: center;
+}
