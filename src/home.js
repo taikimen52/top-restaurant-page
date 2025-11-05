@@ -1,5 +1,4 @@
-import Shopinfo from "./shopinfo.js"
-console.log(Shopinfo);
+import Shopinfo from "./shopinfo.js";
 
 export default homeRendering;
 
@@ -7,12 +6,19 @@ export default homeRendering;
 const content = document.querySelector("#content");
 
 function homeRendering() {
-    for(let k of Object.keys(Shopinfo)) {
-        const el = document.createElement("p");
-        el.setAttribute("class", "info");
-        el.setAttribute("id", `${k}`)
-        el.innerText = Shopinfo[k];
-        content.appendChild(el);
-    }
+	for (let k of Object.keys(Shopinfo)) {
+		if (k === "name") {
+			const el = document.createElement("h1");
+			el.setAttribute("class", "info");
+			el.setAttribute("id", `${k}`);
+			el.innerText = Shopinfo[k];
+			content.appendChild(el);
+		} else {
+			const el = document.createElement("p");
+			el.setAttribute("class", "info");
+			el.setAttribute("id", `${k}`);
+			el.innerText = Shopinfo[k];
+			content.appendChild(el);
+		}
+	}
 }
-
